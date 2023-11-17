@@ -1,4 +1,5 @@
-//import './styling.css';
+import React from "react";
+import ("./styling.css")
 
 const Table = ({ sat }) => 
 {
@@ -7,7 +8,7 @@ const Table = ({ sat }) =>
       <thead>
         <tr>
           <th>Name</th>
-          {/* <th>Type of Satellite</th>
+         {/* <th>Type of Satellite</th>
           <th>Launch Date</th>
           <th>Status</th> */}
         </tr>
@@ -15,6 +16,7 @@ const Table = ({ sat }) =>
      
       <tbody>
         <tr>
+          <td>satellite name</td>
           {/* <td>{satellite.name}</td>
           <td>{satellite.type}</td>
           <td>{satellite.launchDate}</td>

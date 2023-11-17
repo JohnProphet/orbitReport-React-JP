@@ -1,13 +1,19 @@
 import React from "react";
+import ("./styling.css");
 
-const Banner = () => 
+Banner = () =>
 {
     return (
       <div>
-        <title>OrbitReport</title>
-        <h1>OrbitReport</h1>
+        <title>Orbit Report</title>
+        <header>
+          <h1>Orbit Report</h1>
+         </header>
+         <body> 
+           <p>Click on the buttons to see the satellites in that orbit type</p>
+         </body>
       </div>
     );
 };
   
-  export default Banner;
+export default Banner()
