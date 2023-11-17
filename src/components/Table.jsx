@@ -1,5 +1,6 @@
 //import React from "react";
 import ("./styling.css")
+import satData from "./satData";
 
 const Table = ({ sat }) => 
 {
@@ -15,17 +16,17 @@ const Table = ({ sat }) =>
       </thead>
      
       <tbody>
-        <tr>
-          <td>satellite.name</td>
-          <td>satellite.type</td>
-          <td>satellite.launchDate</td>
-          <td>satellite.status</td>
- 
-          {/* <td>{satellite.name}</td>
-          <td>{satellite.type}</td>
-          <td>{satellite.launchDate}</td>
-          <td>{satellite.status}</td> */}
-        </tr>
+        {satData.map((sat, key) =>
+        {
+          return (
+            <tr key={key}>
+              <td>{sat.name}</td>
+              <td>{sat.type}</td>
+              <td>{sat.launchDate}</td>
+              <td>sat.operational.value</td>
+            </tr>
+          )
+        })}
       </tbody>
     </table>
   );
