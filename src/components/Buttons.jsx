@@ -1,13 +1,13 @@
-import React from "react";
+//import React from "react";
 import ("./styling.css")
 
 const Buttons = ({ filterByType, setSat, displaySats }) => {
   return (
     <div>
-      <button> Low Orbit </button>
-      <button> Medium Orbit </button>
-      <button> High Orbit </button>
-      <button> All Orbits </button>
+      <button>Low Orbit</button>
+      <button>Medium Orbit</button>
+      <button>High Orbit</button>
+      <button>All Orbits</button>
     </div>
   );
 };
