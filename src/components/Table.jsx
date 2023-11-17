@@ -23,7 +23,7 @@ const Table = ({ sat }) =>
               <td>{sat.name}</td>
               <td>{sat.type}</td>
               <td>{sat.launchDate}</td>
-              <td>sat.operational.value</td>
+              <td>FIXME active/inactive</td>
             </tr>
           )
         })}

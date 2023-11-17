@@ -1,10 +1,10 @@
 //import React from "react";
 import ("./styling.css")
 
-const Buttons = ({ filterByType, setSat, displaySats }) => {
+const Buttons = ({ filterByType, setSat, displaySats }) => 
+{
   return (
     <div>
-      {/* <button onClick={() => setSat(</button> */}
       <button onClick={button1}>Low Orbit</button>
       <button onClick={button2}>Medium Orbit</button>
       <button onClick={button3}>High Orbit</button>

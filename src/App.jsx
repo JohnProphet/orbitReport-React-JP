@@ -10,16 +10,33 @@ function App() {
   const displaySats = [...new Set(satData.map((data) => data.orbitType))];
   return (
     <div>
-      <Banner />
-      <Buttons />
-      <Table />
+       <>
+   <Banner />
+   <Buttons
+     filterByType={filterByType}
+     setSat={setSat}
+     displaySats={displaySats}
+   />
+   <Table sat={sat} />
+ </>
     </div>
   );
 }
 
-export default App;
+/* FIXME unfinished function below:
+1) Create arrow FUNCTION 'filterByType' which will take PARAMETER 'currentType'
+2) Inside the function, update VARIABLE 'displaySats' using FILTER
+3) FILTER requires a callback called 'newSatDisplay'
+4) the filter FUNCTION returns 'newSatDisplay.orbitType' that EQUALS 'currentType'
+5) pass updated 'displaySats' to 'setSat'  */
 
 const filterByType = (currentType) =>
 {
-  satData.filter(low => orbit.low)
+  let displaySats = newSatDisplay.filter(orbitType) //FIXME bad logic
+  return newSatDisplay.orbitType=(currentType);
+  // TODO: update 'displaySats' to 'setSat'
 }
+
+//FIXME ^^ABOVE^^ probably wrong
+
+export default App;
