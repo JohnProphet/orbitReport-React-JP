@@ -33,12 +33,9 @@ function App() {
 
 const filterByType = (currentType) =>
 {
-  console.log("displaySats below this line")
-
-  //console.log(displaySats)
   displaySats.filter(sat.orbitType) //FIXME bad logic
-
-  return displaySats.orbitType=(currentType);
+  displaySats.orbitType=currentType;
+  return currentType
   // TODO: update 'displaySats' to 'setSat'
 }
 
