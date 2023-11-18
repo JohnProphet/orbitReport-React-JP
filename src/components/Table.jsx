@@ -2,6 +2,9 @@
 import ("./styling.css")
 import satData from "./satData";
 
+
+
+
 const Table = ({ sat }) => 
 {
   return (
@@ -16,6 +19,7 @@ const Table = ({ sat }) =>
       </thead>
      
       <tbody>
+    
         {satData.map((sat, key) =>
         {
           return (
@@ -23,7 +27,7 @@ const Table = ({ sat }) =>
               <td>{sat.name}</td>
               <td>{sat.type}</td>
               <td>{sat.launchDate}</td>
-              <td>FIXME active/inactive</td>
+              <td>{sat.operational ? "active" : "inactive"}</td>
             </tr>
           )
         })}
