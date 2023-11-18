@@ -27,7 +27,7 @@ const Table = ({ sat }) =>
               <td>{sat.name}</td>
               <td>{sat.type}</td>
               <td>{sat.launchDate}</td>
-              <td>{sat.operational ? "active" : "inactive"}</td>
+              <td>{sat.operational ? "Active" : "Inactive"}</td>
             </tr>
           )
         })}
