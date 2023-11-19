@@ -24,7 +24,7 @@ function App() {
   );
 }
 
-/* FIXME unfinished function below:
+/*
 1) Create arrow FUNCTION 'filterByType' which will take PARAMETER 'currentType'
 2) Inside the function, update VARIABLE 'displaySats' using FILTER
 3) FILTER requires a callback called 'newSatDisplay'
@@ -33,12 +33,11 @@ function App() {
 
 const filterByType = (currentType) =>
 {
-  displaySats.filter(sat.orbitType) //FIXME bad logic
+  displaySats = sat.filter((newSatDisplay) =>
+  {
+    return newSatDisplay.orbitType === currentType;
+  });
   displaySats.orbitType=currentType;
-  return currentType
-  // TODO: update 'displaySats' to 'setSat'
 }
-
-//FIXME ^^ABOVE^^ probably wrong
 
 export default App;

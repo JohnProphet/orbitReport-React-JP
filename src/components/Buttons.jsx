@@ -16,13 +16,13 @@ const Buttons = ({ filterByType, setSat, displaySats }) =>
         );
       })}
       
-      <button onClick={button4}>All Orbits</button>
+      <button onClick={allOrbits}>All Orbits</button>
     </div>
   );
 };
 
 
-function button4()
+function allOrbits()
 {
   alert("all orbits selected!")
 }
