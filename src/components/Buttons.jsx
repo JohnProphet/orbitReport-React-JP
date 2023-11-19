@@ -1,12 +1,12 @@
 //import React from "react";
-import ("./styling.css")
-//import satData from ".";
+import "./styling.css";
+import satData from "./satData";
 
 
 const Buttons = ({ filterByType, setSat, displaySats }) => 
 {
   return (
-    <div>
+    <div className="flex-container">
       {displaySats.map((sat, id) => 
       {
         return (
@@ -16,15 +16,9 @@ const Buttons = ({ filterByType, setSat, displaySats }) =>
         );
       })}
       
-      <button onClick={allOrbits}>All Orbits</button>
+      <button onClick={()=> setSat(satData)}>All Orbits</button>
     </div>
   );
 };
-
-
-function allOrbits()
-{
-  alert("all orbits selected!")
-}
 
 export default Buttons;
